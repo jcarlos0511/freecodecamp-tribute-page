@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2|Oswald&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(184, 181, 181, 0.349);
+}
+
+:root {
+  --font-baloo: "Baloo 2", cursive;
+  --font-oswald: "Oswald", sans-serif;
+}
+
+/* global classes*/
+.font-oswald {
+  font: normal 400 28px var(--font-oswald);
+  text-align: center;
+}
+.font-baloo {
+  font: normal 300 18px var(--font-baloo);
+  text-align: center;
+}
+.justify{
+    text-align: justify;
+   
+}
+
+/* global id*/
+#img-div{
+    background-color: white;
+    padding: 2rem 10rem 1rem 10rem;
+    text-align: center;
+    margin: 1rem 2rem 1rem 2rem;
+}
+#image{
+    max-width: 100%;
+    height: auto ;
+}
+
+#tribute-info{
+    display: block;
+    margin: 1rem 10rem 1rem 10rem;
+    
+}
+#tribute-link{
+    text-decoration: none;
+    transition: transform .2s;
+}
+#tribute-link:hover{
+    transform: scale(1.1);
+}
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    #img-div{
+        margin: 1rem ;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    #tribute-info {
+      margin: 1rem 2rem 1rem 2rem;
+    }
+    .font-oswald{
+        font-size: 18px;
+    }
+  }
